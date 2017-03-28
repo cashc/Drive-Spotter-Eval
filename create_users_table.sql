@@ -4,7 +4,6 @@ CREATE TABLE public.users
   email      VARCHAR(128),
   firstname VARCHAR(64),
   lastname  VARCHAR(64),
-  salt       VARCHAR(16),
   hash       VARCHAR(64)
 );
 CREATE UNIQUE INDEX users_id_uindex
