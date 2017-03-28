@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from auth import *
 
 app = Flask(__name__)
 
@@ -7,6 +8,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
 @app.route('/')
+@requires_auth
 def home():
     return render_template('home.html')
 
