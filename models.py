@@ -1,6 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
-from werkzeug.security import generate_password_hash, check_password_hash
-import string, random
+from werkzeug.security import check_password_hash
+import string
 
 db = SQLAlchemy()
 SIMPLE_CHARS = string.ascii_letters + string.digits
